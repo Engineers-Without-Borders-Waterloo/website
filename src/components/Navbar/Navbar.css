@@ -1,0 +1,132 @@
+/* Navbar Styles */
+nav {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Add padding to body to prevent content from hiding under fixed navbar */
+body {
+  padding-top: 70px;
+}
+
+.nav-center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+}
+
+.links-container {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  height: auto;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #667eea;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #667eea;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.social-icons a:hover {
+  background-color: #5568d3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .links-container {
+    height: 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 16px;
+  }
+
+  .nav-center {
+    flex-wrap: wrap;
+  }
+
+  .social-icons {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+}
