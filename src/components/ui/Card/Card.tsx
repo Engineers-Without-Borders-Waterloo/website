@@ -1,7 +1,16 @@
-type CardProps = {
-    name?: string;
-}
+const programs = [
+    { title: "Global Engineering", desc: "Work on partner-driven projects."},
+    { title: "Advocacy", desc: "Campaigns that shift systems."},
+];
 
-export default function Card({name = "Aidan"}: CardProps){
-    return <h1>Hello, {name}!</h1>
+export default function ProgramsSection(){
+    return (
+        <section>
+            <h2>What we do</h2>
+
+            <>
+                {programs.map((p) => )}
+            </>
+        </section>
+    )
 }
