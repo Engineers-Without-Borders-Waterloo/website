@@ -1,4 +1,5 @@
 import './App.css'
+
 import Greeting from './components/Greeting/Greeting.tsx'
 import Navbar from './components/Navbar/Navbar'
 
@@ -14,6 +15,7 @@ function App() {
         <h1>Hello World!</h1>
       </div>
     </>
+
   )
 }
 
