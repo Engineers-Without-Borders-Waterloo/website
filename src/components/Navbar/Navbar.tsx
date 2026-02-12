@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { links, social } from './Data';
+import { links } from './Data';
 import logo from './logo.svg';
 import './navbar.css';
 
@@ -15,17 +14,12 @@ const Navbar = () => {
   const linkStyles = {
     height: showLinks
       ? `${linksRef.current?.getBoundingClientRect().height}px`
-      : '0px',
+      : 'auto',
   };
   return (
     <nav>
       <div className='nav-center'>
-        <div className='nav-header'>
-          <img src={logo} className='logo' alt='logo' />
-          <button className='nav-toggle' onClick={toggleLinks}>
-            <FaBars />
-          </button>
-        </div>
+        <img src={logo} className='logo' alt='logo' />
 
         <div
           className='links-container'
@@ -43,17 +37,8 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        {/* social icons */}
-        <ul className='social-icons'>
-          {social.map((socialIcon: { id: number; url: string; icon: React.ReactNode }) => {
-            const { id, url, icon } = socialIcon;
-            return (
-              <li key={id}>
-                <a href={url}>{icon}</a>
-              </li>
-            );
-          })}
-        </ul>
+
+        <button className='get-started-btn'>Get Started</button>
       </div>
     </nav>
   );
