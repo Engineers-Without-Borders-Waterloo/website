@@ -2,7 +2,6 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/ewb-waterloo",
   // Keep this if you were using it to fix Turbopack root detection
   turbopack: {
     root: process.cwd(),
