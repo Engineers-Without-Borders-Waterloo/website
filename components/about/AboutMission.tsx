@@ -148,7 +148,7 @@ export function AboutMission() {
 
           <div className="rounded-lg border p-6">
             <h3 className="text-heading-xs mb-3">
-              Executive Member Applications
+              Lead & Executive Member Applications
             </h3>
 
             <p className="text-muted-foreground leading-relaxed mb-4">
