@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   description:
     'The University of Waterloo chapter of Engineers Without Borders Canada, engineering an equitable and sustainable future through systems change leadership, campus advocacy, and international fellowships.',
   // Every "Get Involved" / "Join Us" CTA points here. External links open in a new tab.
-  getInvolvedUrl: 'https://discord.gg/Cdws4qAngN',
+  getInvolvedUrl: 'https://linktr.ee/uwewb',
   socials: [
     {
       id: 'instagram',

@@ -3,47 +3,39 @@ import type { DesignTeamsPageData } from '@/types';
 export const designTeamsPageData: DesignTeamsPageData = {
   heading: 'Our Design Teams',
   introduction:
-    'Our chapter is home to several student design teams, each tackling a distinct engineering or systems-change challenge. Together, they carry out hands-on projects that put our mission into practice.',
+    'Our design teams bring students together to work on engineering and systems-change challenges across climate, sustainability, and community development.',
   teams: [
-    {
-      id: 'team-campus-swm',
-      name: 'Campus SWM',
-      description:
-        'Campus Stormwater Management (SWM) Living Lab is a multi-disciplinary project identifying and monitoring nature-based stormwater solutions on campus for classroom learning and to enhance public awareness. The team is currently in the research and implementation stage, conducting study site background reconnaissance, confirming the installation plan, and researching instruments.',
-      imageAlt: 'Campus SWM team photo placeholder',
-      imageSrc: '/images/design-teams/campus-swm.png',
-    },
-    {
-      id: 'team-map-the-system',
-      name: 'Map the System',
-      description:
-        'Map the System is a global research competition using systems thinking to explore the root causes of complex social and environmental issues, from housing inadequacy to accessibility in education.',
-      imageAlt: 'Map the System team photo placeholder',
-      imageSrc: '/images/design-teams/map-the-system.png',
-    },
-    {
-      id: 'team-openair',
-      name: 'OpenAir',
-      description:
-        'OpenAir designs a fully automated, open-source and open-access carbon capture device built for under $2,000. The team earned an honorable mention in the 2026 OpenAir Carbon Removal Challenge and previously won "Best Design" (2023) and "Most Novel Design" (2024). Work is organized across three sub-teams: Reactor Design Optimization, Sensor Development, and Sorbent and Algae.',
-      imageAlt: 'OpenAir team photo placeholder',
-      imageSrc: '/images/design-teams/openair.png',
-    },
     {
       id: 'team-pyroneers',
       name: 'Pyroneers',
       description:
-        'Pyroneers turns invasive buckthorn into biochar while educating the community on climate topics. The team diverts invasive species waste and converts it into biochar, uses that biochar for tree planting and improving urban soils in Kitchener-Waterloo, and provides educational opportunities to local youth.',
-      imageAlt: 'Pyroneers team photo placeholder',
+        'Pyroneers explores the potential of converting invasive buckthorn species into biochar. The team works on processing buckthorn into a useful material for tree planting and urban soils, while creating educational opportunities for local youth around environmental sustainability and climate change.',
+      imageAlt: 'Pyroneers Placeholder',
       imageSrc: '/images/design-teams/pyroneers.png',
     },
     {
-      id: 'team-waturbine',
-      name: 'WATurbine',
+      id: 'team-campus-swm',
+      name: 'Campus SWM',
       description:
-        'WATurbine designs and builds a small wind turbine for the annual International Small Wind Turbine Competition, with a goal of developing turbines that can power off-grid communities.',
-      imageAlt: 'WATurbine team photo placeholder',
-      imageSrc: '/images/design-teams/waturbine.png',
+        'The Campus Stormwater Living Lab explores nature-based approaches to stormwater management on campus. The team researches and monitors potential stormwater solutions while connecting the project to campus sustainability, classroom learning, and public awareness.',
+      imageAlt: 'Campus SWM Placeholder',
+      imageSrc: '/images/design-teams/campus-swm.png',
+    },
+    {
+      id: 'team-watair',
+      name: 'WatAir',
+      description:
+        'WatAir explores carbon dioxide removal through Direct Air Capture technology. The team designs and develops an automated, open-source, and open-access carbon capture device while researching areas including reactor design, sensor development, and sorbent and algae systems.',
+      imageAlt: 'WatAir Placeholder',
+      imageSrc: '/images/design-teams/watair.png',
+    },
+    {
+      id: 'team-thailand',
+      name: 'Thailand Project',
+      description:
+        'The Thailand Project works with a Migrant Learning Centre in Mae Sot, Thailand, to support its educational needs. The team works with the community to understand its priorities and explore sustainable, long-term solutions that respond to local needs.',
+      imageAlt: 'Thailand Placeholder',
+      imageSrc: '/images/design-teams/thailand.png',
     },
   ],
 };

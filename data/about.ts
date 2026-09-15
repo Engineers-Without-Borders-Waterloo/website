@@ -4,15 +4,13 @@ import type { AboutPageData } from '@/types';
 const EWB_LINKEDIN_URL = 'https://www.linkedin.com/company/engineers-without-borders-canada/';
 
 export const aboutPageData: AboutPageData = {
-  mission: {
-    heading: 'About Our Chapter',
-    paragraphs: [
-      'Our mission is to address the root causes of poverty and inequality through systemic change and engineering innovation. Our vision is engineering an equitable and sustainable future for marginalized people and the planet.',
-      'Engineers Without Borders Canada was founded in 2000 by George Roter and Parker Mitchell, two engineering graduates of the University of Waterloo, from little more than a scribble on a napkin in a coffee shop. Our chapter was founded that same year, carrying that founding legacy forward on the campus where it all began.',
-      'We collaborate with local NGOs and government departments in countries including Burkina Faso, Ghana, Malawi, and Zambia, applying EWB Canada\u2019s Systems Change Leadership model to identify and work towards the root causes of poverty and inequality, both in Canada and around the world.',
-      'Today, our chapter is made up of portfolios spanning podcasting, education, advocacy, events and outreach, fundraising, a shipping container project, web development, and social media, along with design teams including WATurbine, OpenAir, Pyroneers, Map the System, and Campus SWM, all led by our executive team.',
-    ],
-  },
+mission: {
+  heading: 'About Us',
+  paragraphs: [
+    'Engineers Without Borders at the University of Waterloo is a student-led community exploring what it means to be a systems-change thinker in a complex world.',
+    'We bring together students from different disciplines to learn, build, question, and take action on social and environmental challenges. Through our portfolios, design teams, and community projects, we create opportunities to look beyond the technical solution and understand the systems around it.',
+  ],
+},
   gallery: [
     {
       id: 'gallery-1',

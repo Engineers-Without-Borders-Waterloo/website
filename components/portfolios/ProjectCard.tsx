@@ -15,9 +15,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardHeader>
       <CardContent className="flex flex-1 flex-col">
         <p className="text-muted-foreground">
-          {project.description.length > 120
-            ? `${project.description.slice(0, 120)}…`
-            : project.description}
+          {project.description}
         </p>
       </CardContent>
     </Card>
