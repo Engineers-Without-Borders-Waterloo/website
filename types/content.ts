@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   description: string;
   imageAlt: string;
-  /** Path under /public, e.g. "/images/portfolios/advocacy.jpg". Omit to show a placeholder. */
+  /** Path under /public, e.g. "/images/portfolios/advocacy.webp". Omit to show a placeholder. */
   imageSrc?: string;
 }
 
@@ -13,7 +13,7 @@ export interface TeamMember {
   /** One or more roles held by this person. Rendered as separate badges on their single card. */
   roles: string[];
   photoAlt: string;
-  /** Path under /public, e.g. "/images/about/team/president.jpg". Omit to show a placeholder. */
+  /** Path under /public, e.g. "/images/about/team/president.webp". Omit to show a placeholder. */
   photoSrc?: string;
   /** Full LinkedIn profile URL, e.g. "https://www.linkedin.com/in/username". Omit to render the card without a link. */
   linkedinUrl?: string;
@@ -24,14 +24,14 @@ export interface Team {
   name: string;
   description: string;
   imageAlt: string;
-  /** Path under /public, e.g. "/images/design-teams/waturbine.jpg". Omit to show a placeholder. */
+  /** Path under /public, e.g. "/images/design-teams/waturbine.webp". Omit to show a placeholder. */
   imageSrc?: string;
 }
 
 export interface GalleryImage {
   id: string;
   imageAlt: string;
-  /** Path under /public, e.g. "/images/about/gallery/gallery-1.jpg". Omit to show a placeholder. */
+  /** Path under /public, e.g. "/images/about/gallery/gallery-1.webp". Omit to show a placeholder. */
   imageSrc?: string;
 }
 
@@ -48,7 +48,7 @@ export interface HomePageData {
     heading: string;
     tagline: string;
     imageAlt: string;
-    /** Path under /public, e.g. "/images/home/hero.jpg". Omit to show a placeholder. */
+    /** Path under /public, e.g. "/images/home/hero.webp". Omit to show a placeholder. */
     imageSrc?: string;
   };
   explorePages: PageLink[];
@@ -56,7 +56,7 @@ export interface HomePageData {
     heading: string;
     body: string;
     imageAlt: string;
-    /** Path under /public, e.g. "/images/home/mission.jpg". Omit to show a placeholder. */
+    /** Path under /public, e.g. "/images/home/mission.webp". Omit to show a placeholder. */
     imageSrc?: string;
   };
   cta: {
