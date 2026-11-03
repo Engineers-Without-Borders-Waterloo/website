@@ -118,11 +118,11 @@ mission: {
       },
       {
         id: 'exec-lead-web-development',
-        name: 'Member Name',
+        name: 'Sehaj Kaura',
         roles: ['Web Development Lead'],
         photoAlt: 'Web Development Lead portrait placeholder',
         photoSrc: '/images/about/team/web-development-lead.png',
-        linkedinUrl: EWB_LINKEDIN_URL,
+        linkedinUrl: "https://www.linkedin.com/in/gursehajkaura/",
       },
     ],
 
