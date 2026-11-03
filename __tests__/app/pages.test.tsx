@@ -5,6 +5,7 @@ import Home from '@/app/page';
 import PortfoliosPage from '@/app/portfolios/page';
 import DesignTeamsPage from '@/app/design-teams/page';
 import AboutPage from '@/app/about/page';
+import TeamPage from '@/app/team/page';
 import NotFound from '@/app/not-found';
 
 import { homePageData } from '@/data/home';
@@ -48,12 +49,25 @@ describe('Design Teams page', () => {
 });
 
 describe('About page', () => {
-  it('renders the mission heading and the executive team', () => {
+  it('renders the mission heading', () => {
     render(<AboutPage />);
     expect(
       screen.getByRole('heading', { level: 1, name: aboutPageData.mission.heading })
     ).toBeInTheDocument();
+  });
+});
+
+describe('Team page', () => {
+  it('renders the heading, the executive team, and a card per person', () => {
+    render(<TeamPage />);
+    expect(screen.getByRole('heading', { level: 1, name: 'Meet Our Team' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Executive Team' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Members' })).toBeInTheDocument();
+
+    const { president, portfolioLeads, designTeamLeads, members } = aboutPageData.team;
+    const total = 1 + portfolioLeads.length + designTeamLeads.length + members.length;
+    expect(screen.getAllByText('Member Name')).toHaveLength(total);
+    expect(screen.getByText(president.roles[0])).toBeInTheDocument();
   });
 });
 

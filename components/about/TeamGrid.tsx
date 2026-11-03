@@ -22,7 +22,7 @@ export function TeamGrid() {
   return (
     <Section>
       <h2 className="text-heading-md lg:text-heading-lg mb-8">Executive Team</h2>
-      <Grid>
+      <Grid cols={{ mobile: 2, tablet: 3, desktop: 4 }}>
         <StaggerChildren>
           {team.map((member) => (
             <MemberCard key={member.id} member={member} />

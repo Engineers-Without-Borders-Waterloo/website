@@ -91,5 +91,7 @@ export interface AboutPageData {
     portfolioLeads: TeamMember[];
     /** Any order — automatically alphabetized by role, with duplicate roles grouped together. */
     designTeamLeads: TeamMember[];
+    /** General members, shown below the exec team on /team in the order listed. */
+    members: TeamMember[];
   };
 }

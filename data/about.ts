@@ -174,5 +174,51 @@ mission: {
         linkedinUrl: EWB_LINKEDIN_URL,
       },
     ],
+
+    // ---------------------------------------------------------------------
+    // MEMBERS
+    // Shown in the "Members" section of the /team page, in the order listed.
+    // Put photos in /public/images/team/ and set photoSrc (e.g.
+    // '/images/team/jane-doe.png'); omit photoSrc to show a placeholder.
+    // linkedinUrl is optional — omit it and the card won't be a link.
+    // ---------------------------------------------------------------------
+    members: [
+      {
+        id: 'member-1',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+      {
+        id: 'member-2',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+      {
+        id: 'member-3',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+      {
+        id: 'member-4',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+      {
+        id: 'member-5',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+      {
+        id: 'member-6',
+        name: 'Member Name',
+        roles: ['Member'],
+        photoAlt: 'Member portrait placeholder',
+      },
+    ],
   },
 };
