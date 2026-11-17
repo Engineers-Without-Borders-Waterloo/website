@@ -12,6 +12,7 @@
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "optimize-images": "node scripts/optimize-images.mjs",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"

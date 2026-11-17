@@ -15,32 +15,32 @@ mission: {
     {
       id: 'gallery-1',
       imageAlt: 'Chapter photo placeholder 1',
-      imageSrc: '/images/about/gallery/gallery-1.png',
+      imageSrc: '/images/about/gallery/gallery-1.webp',
     },
     {
       id: 'gallery-2',
       imageAlt: 'Chapter photo placeholder 2',
-      imageSrc: '/images/about/gallery/gallery-2.png',
+      imageSrc: '/images/about/gallery/gallery-2.webp',
     },
     {
       id: 'gallery-3',
       imageAlt: 'Chapter photo placeholder 3',
-      imageSrc: '/images/about/gallery/gallery-3.png',
+      imageSrc: '/images/about/gallery/gallery-3.webp',
     },
     {
       id: 'gallery-4',
       imageAlt: 'Chapter photo placeholder 4',
-      imageSrc: '/images/about/gallery/gallery-4.png',
+      imageSrc: '/images/about/gallery/gallery-4.webp',
     },
     {
       id: 'gallery-5',
       imageAlt: 'Chapter photo placeholder 5',
-      imageSrc: '/images/about/gallery/gallery-5.png',
+      imageSrc: '/images/about/gallery/gallery-5.webp',
     },
     {
       id: 'gallery-6',
       imageAlt: 'Chapter photo placeholder 6',
-      imageSrc: '/images/about/gallery/gallery-6.png',
+      imageSrc: '/images/about/gallery/gallery-6.webp',
     },
   ],
   team: {
@@ -49,7 +49,7 @@ mission: {
       name: 'Member Name',
       roles: ['President'],
       photoAlt: 'President portrait placeholder',
-      photoSrc: '/images/about/team/president.png',
+      photoSrc: '/images/about/team/president.webp',
       linkedinUrl: EWB_LINKEDIN_URL,
     },
 
@@ -65,7 +65,7 @@ mission: {
         name: 'Member Name',
         roles: ['Advocacy Lead'],
         photoAlt: 'Advocacy Lead portrait placeholder',
-        photoSrc: '/images/about/team/advocacy-lead.png',
+        photoSrc: '/images/about/team/advocacy-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -73,7 +73,7 @@ mission: {
         name: 'Member Name',
         roles: ['Education Lead'],
         photoAlt: 'Education Lead portrait placeholder',
-        photoSrc: '/images/about/team/education-lead.png',
+        photoSrc: '/images/about/team/education-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -81,7 +81,7 @@ mission: {
         name: 'Member Name',
         roles: ['Events and Outreach Lead'],
         photoAlt: 'Events and Outreach Lead portrait placeholder',
-        photoSrc: '/images/about/team/events-outreach-lead.png',
+        photoSrc: '/images/about/team/events-outreach-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -89,7 +89,7 @@ mission: {
         name: 'Member Name',
         roles: ['Fundraising Lead'],
         photoAlt: 'Fundraising Lead portrait placeholder',
-        photoSrc: '/images/about/team/fundraising-lead.png',
+        photoSrc: '/images/about/team/fundraising-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -97,7 +97,7 @@ mission: {
         name: 'Member Name',
         roles: ['Podcast Lead'],
         photoAlt: 'Podcast Lead portrait placeholder',
-        photoSrc: '/images/about/team/podcast-lead.png',
+        photoSrc: '/images/about/team/podcast-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -105,7 +105,7 @@ mission: {
         name: 'Member Name',
         roles: ['Shipping Container Project Lead'],
         photoAlt: 'Shipping Container Project Lead portrait placeholder',
-        photoSrc: '/images/about/team/shipping-container-lead.png',
+        photoSrc: '/images/about/team/shipping-container-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -113,7 +113,7 @@ mission: {
         name: 'Member Name',
         roles: ['Social Media Lead'],
         photoAlt: 'Social Media Lead portrait placeholder',
-        photoSrc: '/images/about/team/social-media-lead.png',
+        photoSrc: '/images/about/team/social-media-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -121,7 +121,7 @@ mission: {
         name: 'Member Name',
         roles: ['Web Development Lead'],
         photoAlt: 'Web Development Lead portrait placeholder',
-        photoSrc: '/images/about/team/web-development-lead.png',
+        photoSrc: '/images/about/team/web-development-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
     ],
@@ -138,7 +138,7 @@ mission: {
         name: 'Member Name',
         roles: ['Campus SWM Lead'],
         photoAlt: 'Campus SWM Lead portrait placeholder',
-        photoSrc: '/images/about/team/campus-swm-lead.png',
+        photoSrc: '/images/about/team/campus-swm-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -146,7 +146,7 @@ mission: {
         name: 'Member Name',
         roles: ['Map the System Lead'],
         photoAlt: 'Map the System Lead portrait placeholder',
-        photoSrc: '/images/about/team/map-the-system-lead.png',
+        photoSrc: '/images/about/team/map-the-system-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -154,7 +154,7 @@ mission: {
         name: 'Member Name',
         roles: ['OpenAir Lead'],
         photoAlt: 'OpenAir Lead portrait placeholder',
-        photoSrc: '/images/about/team/openair-lead.png',
+        photoSrc: '/images/about/team/openair-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -162,7 +162,7 @@ mission: {
         name: 'Member Name',
         roles: ['Pyroneers Lead'],
         photoAlt: 'Pyroneers Lead portrait placeholder',
-        photoSrc: '/images/about/team/pyroneers-lead.png',
+        photoSrc: '/images/about/team/pyroneers-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
       {
@@ -170,7 +170,7 @@ mission: {
         name: 'Member Name',
         roles: ['WATurbine Lead'],
         photoAlt: 'WATurbine Lead portrait placeholder',
-        photoSrc: '/images/about/team/waturbine-lead.png',
+        photoSrc: '/images/about/team/waturbine-lead.webp',
         linkedinUrl: EWB_LINKEDIN_URL,
       },
     ],
