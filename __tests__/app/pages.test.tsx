@@ -65,8 +65,13 @@ describe('Team page', () => {
     expect(screen.getByRole('heading', { name: 'Members' })).toBeInTheDocument();
 
     const { president, portfolioLeads, designTeamLeads, members } = aboutPageData.team;
-    const total = 1 + portfolioLeads.length + designTeamLeads.length + members.length;
-    expect(screen.getAllByText('Member Name')).toHaveLength(total);
+    const everyone = [president, ...portfolioLeads, ...designTeamLeads, ...members];
+
+    // One card (and one name) per person, however many share a placeholder name.
+    for (const name of new Set(everyone.map((m) => m.name))) {
+      const expected = everyone.filter((m) => m.name === name).length;
+      expect(screen.getAllByText(name)).toHaveLength(expected);
+    }
     expect(screen.getByText(president.roles[0])).toBeInTheDocument();
   });
 });

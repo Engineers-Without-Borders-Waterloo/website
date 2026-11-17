@@ -11,7 +11,7 @@ export const designTeamsPageData: DesignTeamsPageData = {
       description:
         'Pyroneers explores the potential of converting invasive buckthorn species into biochar. The team works on processing buckthorn into a useful material for tree planting and urban soils, while creating educational opportunities for local youth around environmental sustainability and climate change.',
       imageAlt: 'Pyroneers Placeholder',
-      imageSrc: '/images/design-teams/pyroneers.png',
+      imageSrc: '/images/design-teams/pyroneers.webp',
     },
     {
       id: 'team-campus-swm',
@@ -19,7 +19,7 @@ export const designTeamsPageData: DesignTeamsPageData = {
       description:
         'The Campus Stormwater Living Lab explores nature-based approaches to stormwater management on campus. The team researches and monitors potential stormwater solutions while connecting the project to campus sustainability, classroom learning, and public awareness.',
       imageAlt: 'Campus SWM Placeholder',
-      imageSrc: '/images/design-teams/campus-swm.png',
+      imageSrc: '/images/design-teams/campus-swm.webp',
     },
     {
       id: 'team-watair',
@@ -27,7 +27,7 @@ export const designTeamsPageData: DesignTeamsPageData = {
       description:
         'WatAir explores carbon dioxide removal through Direct Air Capture technology. The team designs and develops an automated, open-source, and open-access carbon capture device while researching areas including reactor design, sensor development, and sorbent and algae systems.',
       imageAlt: 'WatAir Placeholder',
-      imageSrc: '/images/design-teams/watair.png',
+      imageSrc: '/images/design-teams/watair.webp',
     },
     {
       id: 'team-thailand',
@@ -35,7 +35,7 @@ export const designTeamsPageData: DesignTeamsPageData = {
       description:
         'The Thailand Project works with a Migrant Learning Centre in Mae Sot, Thailand, to support its educational needs. The team works with the community to understand its priorities and explore sustainable, long-term solutions that respond to local needs.',
       imageAlt: 'Thailand Placeholder',
-      imageSrc: '/images/design-teams/thailand.png',
+      imageSrc: '/images/design-teams/thailand.webp',
     },
   ],
 };
