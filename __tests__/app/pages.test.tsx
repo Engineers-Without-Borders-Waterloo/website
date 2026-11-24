@@ -5,6 +5,7 @@ import Home from '@/app/page';
 import PortfoliosPage from '@/app/portfolios/page';
 import DesignTeamsPage from '@/app/design-teams/page';
 import AboutPage from '@/app/about/page';
+import TeamPage from '@/app/team/page';
 import NotFound from '@/app/not-found';
 
 import { homePageData } from '@/data/home';
@@ -48,12 +49,35 @@ describe('Design Teams page', () => {
 });
 
 describe('About page', () => {
-  it('renders the mission heading and the executive team', () => {
+  it('renders the mission heading', () => {
     render(<AboutPage />);
     expect(
       screen.getByRole('heading', { level: 1, name: aboutPageData.mission.heading })
     ).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Executive Team' })).toBeInTheDocument();
+  });
+});
+
+describe('Team page', () => {
+  it('renders the heading, the executive team, and a card per person', () => {
+    render(<TeamPage />);
+    expect(screen.getByRole('heading', { level: 1, name: 'Meet Our Team' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Leadership Team' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Executives' })).toBeInTheDocument();
+
+    const { leadership, portfolioLeads, designTeamLeads, executives } = aboutPageData.team;
+    const everyone = [...leadership, ...portfolioLeads, ...designTeamLeads, ...executives];
+
+    // Exactly one card per person.
+    for (const member of everyone) {
+      expect(screen.getAllByText(member.name)).toHaveLength(1);
+    }
+    // Every person with a LinkedIn gets a card that links to it.
+    for (const member of everyone.filter((m) => m.linkedinUrl)) {
+      expect(screen.getByRole('link', { name: `${member.name}'s LinkedIn profile` })).toHaveAttribute(
+        'href',
+        member.linkedinUrl
+      );
+    }
   });
 });
 

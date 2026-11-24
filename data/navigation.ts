@@ -6,6 +6,7 @@ export const navLinks: NavLink[] = [
   { id: 'portfolios', path: '/portfolios', label: 'Portfolios' },
   { id: 'design-teams', path: '/design-teams', label: 'Design Teams' },
   { id: 'about', path: '/about', label: 'About Us' },
+  { id: 'team', path: '/team', label: 'Our Team' },
 ];
 
 export const ctaLink = {
