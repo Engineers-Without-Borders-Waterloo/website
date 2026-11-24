@@ -1,8 +1,5 @@
 import type { AboutPageData } from '@/types';
 
-// Placeholder until each exec member's real LinkedIn profile is added.
-const EWB_LINKEDIN_URL = 'https://www.linkedin.com/company/engineers-without-borders-canada/';
-
 export const aboutPageData: AboutPageData = {
 mission: {
   heading: 'About Us',
@@ -43,181 +40,137 @@ mission: {
       imageSrc: '/images/about/gallery/gallery-6.webp',
     },
   ],
+  // =======================================================================
+  // TEAM (shown on the /team page)
+  //
+  // Each person needs: id (unique), name, roles, photoAlt.
+  // Optional: photoSrc (omit to show a gray placeholder) and linkedinUrl
+  // (omit and the card won't be a link).
+  //
+  // Headshots live in /public/images/team/ — square, ~800×800 .webp works
+  // best. Run `npm run optimize-images` on any new .jpg/.png first.
+  // =======================================================================
   team: {
-    president: {
-      id: 'exec-president',
-      name: 'Member Name',
-      roles: ['President'],
-      photoAlt: 'President portrait placeholder',
-      photoSrc: '/images/about/team/president.webp',
-      linkedinUrl: EWB_LINKEDIN_URL,
-    },
+    // ---------------------------------------------------------------------
+    // LEADERSHIP — shown first, in the order listed.
+    // ---------------------------------------------------------------------
+    leadership: [
+      {
+        id: 'shathviki-krishnaraj',
+        name: 'Shathviki Krishnaraj',
+        roles: ['Co-President'],
+        photoAlt: 'Portrait of Shathviki Krishnaraj',
+        photoSrc: '/images/team/shathviki-krishnaraj.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/shathviki/',
+      },
+      {
+        id: 'aidan-ko',
+        name: 'Aidan Ko',
+        roles: ['Co-President'],
+        photoAlt: 'Portrait of Aidan Ko',
+        photoSrc: '/images/team/aidan-ko.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/aidanko/',
+      },
+      {
+        id: 'sara-waghmare',
+        name: 'Sara Waghmare',
+        roles: ['VP Finance'],
+        photoAlt: 'Portrait of Sara Waghmare',
+        photoSrc: '/images/team/sara-waghmare.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/sarawaghmare/',
+      },
+    ],
 
     // ---------------------------------------------------------------------
     // PORTFOLIO LEADS
     // Add new leads anywhere in this list — they're automatically sorted
-    // alphabetically by role, and duplicate roles (e.g. two Advocacy Leads)
-    // are automatically grouped together. No manual ordering required.
+    // alphabetically by (first) role. No manual ordering required.
     // ---------------------------------------------------------------------
     portfolioLeads: [
       {
-        id: 'exec-lead-advocacy',
-        name: 'Member Name',
+        id: 'amna-hasan',
+        name: 'Amna Hasan',
         roles: ['Advocacy Lead'],
-        photoAlt: 'Advocacy Lead portrait placeholder',
-        photoSrc: '/images/about/team/advocacy-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
+        photoAlt: 'Portrait of Amna Hasan',
+        photoSrc: '/images/team/amna-hasan.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/amna-hasan1/',
       },
       {
-        id: 'exec-lead-education',
-        name: 'Member Name',
-        roles: ['Education Lead'],
-        photoAlt: 'Education Lead portrait placeholder',
-        photoSrc: '/images/about/team/education-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
+        id: 'salma-elgohary',
+        name: 'Salma ElGohary',
+        roles: ['Education Lead', 'Campus Stormwater Living Lab Co-Lead'],
+        photoAlt: 'Portrait of Salma ElGohary',
+        photoSrc: '/images/team/salma-elgohary.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/salma-elgohary-0102b6228/',
       },
       {
-        id: 'exec-lead-events-outreach',
-        name: 'Member Name',
-        roles: ['Events and Outreach Lead'],
-        photoAlt: 'Events and Outreach Lead portrait placeholder',
-        photoSrc: '/images/about/team/events-outreach-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
+        id: 'gabriel-jabile',
+        name: 'Gabriel Jabile',
+        roles: ['Events Lead'],
+        photoAlt: 'Portrait of Gabriel Jabile',
+        photoSrc: '/images/team/gabriel-jabile.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/gabriel-jabile/',
       },
       {
-        id: 'exec-lead-fundraising',
-        name: 'Member Name',
-        roles: ['Fundraising Lead'],
-        photoAlt: 'Fundraising Lead portrait placeholder',
-        photoSrc: '/images/about/team/fundraising-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
+        id: 'kenzy-soror',
+        name: 'Kenzy Soror',
+        roles: ['Podcasts Lead'],
+        photoAlt: 'Portrait of Kenzy Soror',
+        photoSrc: '/images/team/kenzy-soror.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/kenzysoror/',
       },
       {
-        id: 'exec-lead-podcast',
-        name: 'Member Name',
-        roles: ['Podcast Lead'],
-        photoAlt: 'Podcast Lead portrait placeholder',
-        photoSrc: '/images/about/team/podcast-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-shipping-container',
-        name: 'Member Name',
-        roles: ['Shipping Container Project Lead'],
-        photoAlt: 'Shipping Container Project Lead portrait placeholder',
-        photoSrc: '/images/about/team/shipping-container-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-social-media',
-        name: 'Member Name',
-        roles: ['Social Media Lead'],
-        photoAlt: 'Social Media Lead portrait placeholder',
-        photoSrc: '/images/about/team/social-media-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-web-development',
+        id: 'sehaj-kaura',
         name: 'Sehaj Kaura',
-        roles: ['Web Development Lead'],
-        photoAlt: 'Web Development Lead portrait placeholder',
-        photoSrc: '/images/about/team/web-development-lead.webp',
+        roles: ['Website Lead'],
+        photoAlt: 'Portrait of Sehaj Kaura',
+        photoSrc: '/images/team/sehaj-kaura.webp',
         linkedinUrl: 'https://www.linkedin.com/in/gursehajkaura/',
       },
     ],
 
     // ---------------------------------------------------------------------
     // DESIGN TEAM LEADS
-    // Add new leads anywhere in this list — they're automatically sorted
-    // alphabetically by role, and duplicate roles are automatically grouped
-    // together. No manual ordering required.
+    // Same as portfolio leads: any order, sorted automatically by role.
     // ---------------------------------------------------------------------
-    designTeamLeads: [
-      {
-        id: 'exec-lead-campus-swm',
-        name: 'Member Name',
-        roles: ['Campus SWM Lead'],
-        photoAlt: 'Campus SWM Lead portrait placeholder',
-        photoSrc: '/images/about/team/campus-swm-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-map-the-system',
-        name: 'Member Name',
-        roles: ['Map the System Lead'],
-        photoAlt: 'Map the System Lead portrait placeholder',
-        photoSrc: '/images/about/team/map-the-system-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-openair',
-        name: 'Member Name',
-        roles: ['OpenAir Lead'],
-        photoAlt: 'OpenAir Lead portrait placeholder',
-        photoSrc: '/images/about/team/openair-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-pyroneers',
-        name: 'Member Name',
-        roles: ['Pyroneers Lead'],
-        photoAlt: 'Pyroneers Lead portrait placeholder',
-        photoSrc: '/images/about/team/pyroneers-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-      {
-        id: 'exec-lead-waturbine',
-        name: 'Member Name',
-        roles: ['WATurbine Lead'],
-        photoAlt: 'WATurbine Lead portrait placeholder',
-        photoSrc: '/images/about/team/waturbine-lead.webp',
-        linkedinUrl: EWB_LINKEDIN_URL,
-      },
-    ],
+    designTeamLeads: [],
 
     // ---------------------------------------------------------------------
-    // MEMBERS
-    // Shown in the "Members" section of the /team page, in the order listed.
-    // Put photos in /public/images/team/ and set photoSrc (e.g.
-    // '/images/team/jane-doe.png'); omit photoSrc to show a placeholder.
-    // linkedinUrl is optional — omit it and the card won't be a link.
+    // EXECUTIVES — shown in their own section below the leads, sorted
+    // automatically by (first) role so each portfolio's execs group together.
     // ---------------------------------------------------------------------
-    members: [
+    executives: [
       {
-        id: 'member-1',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
+        id: 'jiya-sivasubramanian',
+        name: 'Jiya Sivasubramanian',
+        roles: ['Education Executive'],
+        photoAlt: 'Portrait of Jiya Sivasubramanian',
+        photoSrc: '/images/team/jiya-sivasubramanian.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/jiya-sivasubramanian/',
       },
       {
-        id: 'member-2',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
+        id: 'sarah-welch',
+        name: 'Sarah Welch',
+        roles: ['Education Executive', 'Shipping Container Project Executive'],
+        photoAlt: 'Portrait of Sarah Welch',
+        photoSrc: '/images/team/sarah-welch.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/sarah-welch-643bb4316/',
       },
       {
-        id: 'member-3',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
+        id: 'seohee-yoon',
+        name: 'Seohee Yoon',
+        roles: ['Podcasts Executive'],
+        photoAlt: 'Portrait of Seohee Yoon',
+        photoSrc: '/images/team/seohee-yoon.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/-seoheeyoon/',
       },
       {
-        id: 'member-4',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
-      },
-      {
-        id: 'member-5',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
-      },
-      {
-        id: 'member-6',
-        name: 'Member Name',
-        roles: ['Member'],
-        photoAlt: 'Member portrait placeholder',
+        id: 'kaleena-kanagarajan',
+        name: 'Kaleena Kanagarajan',
+        roles: ['Website Executive'],
+        photoAlt: 'Portrait of Kaleena Kanagarajan',
+        photoSrc: '/images/team/kaleena-kanagarajan.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/kaleenak/',
       },
     ],
   },

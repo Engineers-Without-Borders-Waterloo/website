@@ -86,12 +86,13 @@ export interface AboutPageData {
   };
   gallery: GalleryImage[];
   team: {
-    president: TeamMember;
+    /** Co-presidents, VPs, etc. Shown first, in the order listed. */
+    leadership: TeamMember[];
     /** Any order — automatically alphabetized by role, with duplicate roles grouped together. */
     portfolioLeads: TeamMember[];
     /** Any order — automatically alphabetized by role, with duplicate roles grouped together. */
     designTeamLeads: TeamMember[];
-    /** General members, shown below the exec team on /team in the order listed. */
-    members: TeamMember[];
+    /** Any order — shown in their own section below the leads, alphabetized by role. */
+    executives: TeamMember[];
   };
 }

@@ -61,18 +61,23 @@ describe('Team page', () => {
   it('renders the heading, the executive team, and a card per person', () => {
     render(<TeamPage />);
     expect(screen.getByRole('heading', { level: 1, name: 'Meet Our Team' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Executive Team' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Members' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Leadership Team' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Executives' })).toBeInTheDocument();
 
-    const { president, portfolioLeads, designTeamLeads, members } = aboutPageData.team;
-    const everyone = [president, ...portfolioLeads, ...designTeamLeads, ...members];
+    const { leadership, portfolioLeads, designTeamLeads, executives } = aboutPageData.team;
+    const everyone = [...leadership, ...portfolioLeads, ...designTeamLeads, ...executives];
 
-    // One card (and one name) per person, however many share a placeholder name.
-    for (const name of new Set(everyone.map((m) => m.name))) {
-      const expected = everyone.filter((m) => m.name === name).length;
-      expect(screen.getAllByText(name)).toHaveLength(expected);
+    // Exactly one card per person.
+    for (const member of everyone) {
+      expect(screen.getAllByText(member.name)).toHaveLength(1);
     }
-    expect(screen.getByText(president.roles[0])).toBeInTheDocument();
+    // Every person with a LinkedIn gets a card that links to it.
+    for (const member of everyone.filter((m) => m.linkedinUrl)) {
+      expect(screen.getByRole('link', { name: `${member.name}'s LinkedIn profile` })).toHaveAttribute(
+        'href',
+        member.linkedinUrl
+      );
+    }
   });
 });
 

@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { Section } from '@/components/layout/Section';
 import { FadeInSection } from '@/components/animation/FadeInSection';
 import { TeamGrid } from '@/components/about/TeamGrid';
-import { MembersGrid } from '@/components/about/MembersGrid';
+import { ExecutivesGrid } from '@/components/about/ExecutivesGrid';
 
 export const metadata: Metadata = {
   title: 'Meet Our Team',
   description:
-    'Meet the students behind the University of Waterloo chapter of Engineers Without Borders Canada — our executive team, portfolio leads, design team leads, and members.',
+    'Meet the students behind the University of Waterloo chapter of Engineers Without Borders Canada — our co-presidents, portfolio leads, design team leads, and executives.',
 };
 
 export default function TeamPage() {
@@ -23,7 +23,7 @@ export default function TeamPage() {
       </FadeInSection>
 
       <TeamGrid />
-      <MembersGrid />
+      <ExecutivesGrid />
     </>
   );
 }
