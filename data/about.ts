@@ -98,7 +98,7 @@ mission: {
       {
         id: 'salma-elgohary',
         name: 'Salma ElGohary',
-        roles: ['Education Lead', 'Campus Stormwater Living Lab Co-Lead'],
+        roles: ['Education Lead', 'Campus Stormwater Living Lab Lead'],
         photoAlt: 'Portrait of Salma ElGohary',
         photoSrc: '/images/team/salma-elgohary.webp',
         linkedinUrl: 'https://www.linkedin.com/in/salma-elgohary-0102b6228/',
@@ -127,13 +127,46 @@ mission: {
         photoSrc: '/images/team/sehaj-kaura.webp',
         linkedinUrl: 'https://www.linkedin.com/in/gursehajkaura/',
       },
+      {
+        id: 'kayna-datta',
+        name: 'Kayna Datta',
+        roles: ['Social Media Lead'],
+        photoAlt: 'Portrait of Kayna Datta',
+        photoSrc: '/images/team/kayna-datta.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/kayna-datta/',
+      },
+      {
+        // TODO: add LinkedIn once found.
+        id: 'aakifah-husnain',
+        name: 'Aakifah Husnain',
+        roles: ['Shipping Container Project Lead'],
+        photoAlt: 'Portrait of Aakifah Husnain',
+        photoSrc: '/images/team/aakifah-husnain.webp',
+      },
     ],
 
     // ---------------------------------------------------------------------
     // DESIGN TEAM LEADS
     // Same as portfolio leads: any order, sorted automatically by role.
     // ---------------------------------------------------------------------
-    designTeamLeads: [],
+    designTeamLeads: [
+      {
+        id: 'laurel-pierroz-wong',
+        name: 'Laurel Pierroz-Wong',
+        roles: ['Pyroneers Lead'],
+        photoAlt: 'Portrait of Laurel Pierroz-Wong',
+        photoSrc: '/images/team/laurel-pierroz-wong.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/laurel-pierroz-wong-b0a6b01a6/',
+      },
+      {
+        // TODO: add LinkedIn once found.
+        id: 'joshua-hardy',
+        name: 'Joshua Hardy',
+        roles: ['WATAIR Lead'],
+        photoAlt: 'Portrait of Joshua Hardy',
+        photoSrc: '/images/team/joshua-hardy.webp',
+      },
+    ],
 
     // ---------------------------------------------------------------------
     // EXECUTIVES — shown in their own section below the leads, sorted
@@ -147,6 +180,14 @@ mission: {
         photoAlt: 'Portrait of Jiya Sivasubramanian',
         photoSrc: '/images/team/jiya-sivasubramanian.webp',
         linkedinUrl: 'https://www.linkedin.com/in/jiya-sivasubramanian/',
+      },
+      {
+        id: 'niharika-ranjith',
+        name: 'Niharika Ranjith',
+        roles: ['Education Executive'],
+        photoAlt: 'Portrait of Niharika Ranjith',
+        photoSrc: '/images/team/niharika-ranjith.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/niharika-ranjith-b40251306/',
       },
       {
         id: 'sarah-welch',
@@ -171,6 +212,38 @@ mission: {
         photoAlt: 'Portrait of Kaleena Kanagarajan',
         photoSrc: '/images/team/kaleena-kanagarajan.webp',
         linkedinUrl: 'https://www.linkedin.com/in/kaleenak/',
+      },
+      {
+        id: 'ila-gupta',
+        name: 'Ila Gupta',
+        roles: ['Advocacy Executive'],
+        photoAlt: 'Portrait of Ila Gupta',
+        photoSrc: '/images/team/ila-gupta.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/ila-gupta-a12b3c/',
+      },
+      {
+        id: 'maira-siddiqi',
+        name: 'Maira Siddiqi',
+        roles: ['Advocacy Executive'],
+        photoAlt: 'Portrait of Maira Siddiqi',
+        photoSrc: '/images/team/maira-siddiqi.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/mairasiddiqi/',
+      },
+      {
+        id: 'ye-gao',
+        name: 'Ye Gao',
+        roles: ['Events Executive'],
+        photoAlt: 'Portrait of Ye Gao',
+        photoSrc: '/images/team/ye-gao.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/ye-gao-03659043b/',
+      },
+      {
+        id: 'aaiza-waqar',
+        name: 'Aaiza Waqar',
+        roles: ['Shipping Container Project Executive'],
+        photoAlt: 'Portrait of Aaiza Waqar',
+        photoSrc: '/images/team/aaiza-waqar.webp',
+        linkedinUrl: 'https://www.linkedin.com/in/aaiza-waqar/',
       },
     ],
   },

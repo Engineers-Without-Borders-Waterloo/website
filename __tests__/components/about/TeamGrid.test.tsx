@@ -46,6 +46,6 @@ describe('TeamGrid', () => {
   it('shows every role for a member with more than one', () => {
     render(<TeamGrid />);
     expect(screen.getByText('Education Lead')).toBeInTheDocument();
-    expect(screen.getByText('Campus Stormwater Living Lab Co-Lead')).toBeInTheDocument();
+    expect(screen.getByText('Campus Stormwater Living Lab Lead')).toBeInTheDocument();
   });
 });
